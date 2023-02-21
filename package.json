@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 4 for OpenClassrooms course",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxence-Lesage/OC-Projet-4.git"
+  },
+  "author": "Maxence Lesage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxence-Lesage/OC-Projet-4/issues"
+  },
+  "homepage": "https://github.com/Maxence-Lesage/OC-Projet-4#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
