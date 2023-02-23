@@ -1,0 +1,14 @@
+@import "./variables";
+
+@mixin text-palette($palettes) {
+
+    @each $text,
+    $palette in $palettes {
+        .#{$text} {
+            font-size: map-get($palette , font-size);
+            font-weight: map-get($palette, font-weight);
+            line-height: map-get($palette, line-height);
+            color: map-get($palette, color);
+        }
+    }
+}

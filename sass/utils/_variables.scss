@@ -1,0 +1,29 @@
+/*Créer une map avec les textes globaux + map avec les textes spécifiques à chaque page*/
+/*Peut-être mettre une map dans une map dans une map X3*/
+
+$text-palette-global: (
+);
+$text-palette-main: (
+);
+
+$text-palette: (
+    section_title:(font-size: 24px,
+        font-weight: 700,
+        line-height: 28px,
+        color: black,
+    ),
+    restaurant_name:(font-size: 18px,
+        font-weight: 700,
+        line-height: 21px,
+        color: black,
+    ),
+    restaurant_adress:(font-size: 17px,
+        font-weight: 300,
+        line-height: 20px,
+        color: black,
+    )
+);
+
+$breakpoints: (
+    mobile: 600px,
+);
