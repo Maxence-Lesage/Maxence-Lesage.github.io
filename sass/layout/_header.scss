@@ -1,0 +1,31 @@
+@import "../utils/variables";
+@import "../utils/breakpoints";
+
+.navigation_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    position: relative;
+    z-index: 1;
+
+    @include desktop_only {
+        height: 73px !important;
+    }
+}
+
+.logo {
+    font-family: $logo_title;
+
+    @include desktop_only {
+        font-size: 35px !important;
+        line-height: 50px !important;
+    }
+}
+
+.navigation_arrow {
+    display: none;
+    position: absolute;
+    height: 16px;
+    left: 6%;
+}

@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin borderRadius ($palettes) {
+
+    @each $name,
+    $palette in $palettes {
+        .#{$name} {
+            border-radius: $palette;
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+@import "./variables";
+
+@mixin box_shadow ($palettes) {
+
+    @each $name,
+    $palette in $palettes {
+        .#{$name} {
+            box-shadow: map-get($palette , offset-x) map-get($palette , offset-y) map-get($palette , blur-radius) map-get($palette , color);
+        }
+    }
+}

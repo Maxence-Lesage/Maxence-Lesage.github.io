@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin margins ($palettes) {
+
+    @each $margin_name,
+    $palette in $palettes {
+        .#{$margin_name} {
+            margin: $palette;
+        }
+    }
+
+}

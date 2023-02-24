@@ -1,5 +1,14 @@
 @import "./base/base";
 @import "./utils/texts";
 @import "./utils/breakpoints";
+@import "./layout/header";
+@import "./pages/introduction";
+@import "./utils/margin";
+@import "./utils/borderRadius";
+@import "./component/button";
+@import "./utils/shadow";
 
 @include text-palette($text-palette);
+@include margins($margins);
+@include borderRadius($border-radius);
+@include box_shadow($box_shadow);
