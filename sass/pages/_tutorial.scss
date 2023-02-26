@@ -1,0 +1,65 @@
+@import "../utils/variables";
+@import "../utils/breakpoints";
+
+.tutorial {
+    display: flex;
+    justify-content: center;
+}
+
+.tutorial_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial_card {
+    display: flex;
+    align-items: center;
+    background-color: map-get($background-colors, light-background);
+    justify-content: space-between;
+    width: clamp(240px, 60vw + 1rem, 260px);
+    height: 68px;
+    padding-right: clamp(30px, 6vw + 1rem, 40px);
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: map-get($background-colors, tutorial-card-hover-background);
+    }
+
+    &:hover .tutorial_icon {
+        color: map-get($background-colors, purple-background);
+    }
+}
+
+.tutorial__card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include desktop_only {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+.tutorial_order_circle {
+    background-color: map-get($background-colors, purple-background);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.tutorial_icon {
+    height: 20px;
+    color: map-get($background-colors , tutorial-icon-background);
+    transform: translateX(-5px);
+    transition: .2s;
+}
+
+.tutorial_text {
+    width: 180px;
+}

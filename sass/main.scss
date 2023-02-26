@@ -7,6 +7,8 @@
 @import "./utils/borderRadius";
 @import "./component/button";
 @import "./utils/shadow";
+@import "./pages/tutorial";
+@import "./pages/restaurantsList";
 
 @include text-palette($text-palette);
 @include margins($margins);

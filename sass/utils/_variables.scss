@@ -9,7 +9,7 @@ $text-palette: (
         line-height: 43px,
         color: black,
     ),
-    location_text:(font-size: 16px,
+    bold_text:(font-size: 16px,
         font-weight: 500,
         line-height: 18px,
         color: black,
@@ -28,6 +28,26 @@ $text-palette: (
         font-weight: 500,
         line-height: 18px,
         color: #ffffff,
+    ),
+    tutorial_order_text:(font-size: 14px,
+        font-weight: 500,
+        line-height: 17px,
+        color: #ffffff,
+    ),
+    restaurant_card_name:(font-size: 18px,
+        font-weight: 700,
+        line-height: 21px,
+        color: #000000,
+    ),
+    restaurant_card_location:(font-size: 17px,
+        font-weight: 300,
+        line-height: 20px,
+        color: #000000,
+    ),
+    restaurant_new_text:(font-size: 14px,
+        font-weight: 500,
+        line-height: 16px,
+        color: #008766,
     )
 );
 
@@ -35,7 +55,7 @@ $text-palette: (
 
 $breakpoints: (
     tablet: 600px,
-    desktop: 900px
+    desktop: 1000px
 );
 
 /*-----BOX-SHADOW-----*/
@@ -48,7 +68,19 @@ $box-shadow: (
     button: (offset-x: 0px,
         offset-y: 4px,
         blur-radius: 10px,
-        color: hsla(0, 0%, 0%, 0.25))
+        color: hsla(0, 0%, 0%, 0.25)),
+    tutorial_card: (offset-x: 0px,
+        offset-y: 4px,
+        blur-radius: 15px,
+        color: hsla(0, 0%, 0%, 0.15)),
+    restaurant_card: (offset-x: 0px,
+        offset-y: 4px,
+        blur-radius: 15px,
+        color: hsla(0, 0%, 0%, 0.10)),
+    restaurant_new: (offset-x: 0px,
+        offset-y: 2px,
+        blur-radius: 4px,
+        color: hsla(0, 0%, 0%, 0.15))
 );
 
 /*-----BACKGROUND-COLORS-----*/
@@ -56,6 +88,10 @@ $box-shadow: (
 $background-colors: (
     dark-background: #EAEAEA,
     light-background: #F6F6F6,
+    purple-background: #9356DC,
+    tutorial-icon-background: #7E7E7E,
+    tutorial-card-hover-background: #F5EDFF,
+    restaurant_new: #99E2D0,
     meal-choosed: #99E2D0,
     footer: #353535
 );
@@ -65,10 +101,18 @@ $background-colors: (
 $margins: (
     explore_margin_wrapper: 20px 8% 60px 8%,
     explore_paragraph: -5px 0 30px 0,
+    tutorial: 25px 20px 50px 20px,
+    tutorial__card_container: 10px 0px 0px 10px,
+    restaurants_list_wrapper: 0px 20px 0px 20px,
+    restaurant_card_bottom: 5px 25px 12px 10px,
+    restaurant_card_icon: 5px 0px 0px 0px,
 );
 
 /*-----BORDER-RADIUS-----*/
 
 $border-radius: (
     button: 25px,
+    tutorial_card: 20px,
+    restaurant_card: 15px,
+    restaurant_new: 2px,
 );
