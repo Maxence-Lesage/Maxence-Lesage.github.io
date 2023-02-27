@@ -2,10 +2,10 @@
 @import "../utils/breakpoints";
 
 .restaurants_list {
-    background-color: map-get($background-colors, light-background);
-    padding: 20px 0px 70px 0px;
     display: flex;
     justify-content: center;
+    background-color: map-get($background-colors, light-background);
+    padding: 20px 0px 70px 0px;
 }
 
 .restaurants_list_wrapper {
@@ -27,7 +27,7 @@
 .restaurant_card {
     position: relative;
     width: clamp(280px, 79vw + 1rem, 340px);
-    background-color: white;
+    background-color: map-get($background-colors, default-background);
     overflow: hidden;
     flex-shrink: 0;
 
@@ -49,12 +49,6 @@
 .restaurant_card_bottom {
     display: flex;
     justify-content: space-between;
-}
-
-.restaurant_card_name,
-.restaurant_card_location,
-.restaurant_new_text {
-    margin: 5px;
 }
 
 .restaurant_new {

@@ -78,12 +78,6 @@ ul {
   align-items: center;
 }
 
-.navigation_arrow {
-  position: absolute;
-  height: 16px;
-  left: 6%;
-}
-
 /*font-family for the logo and the restaurant's name in the menu page*/
 /*-----TEXTS-----*/
 /*-----BREAKPOINTS-----*/
@@ -101,10 +95,6 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
-}
-
-.location_icon {
-  margin-right: 12px;
 }
 
 .explore {
@@ -159,16 +149,41 @@ ul {
 /*-----BACKGROUND-COLORS-----*/
 /*-----MARGINS-----*/
 /*-----BORDER-RADIUS-----*/
-.button {
-  transition: 0.2s;
-  background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
+.gradient_button:hover,
+.navigation_arrow:hover,
+.heart_like:hover {
+  cursor: pointer;
+}
+
+/*-------------*/
+.gradient_button {
   padding: 15px 25px;
   border-style: hidden;
+  background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
+  transition: 0.2s;
 }
-.button:hover {
-  cursor: pointer;
+.gradient_button:hover {
   background: linear-gradient(to top left, #9b63df -5.2%, #ff88de 110.74%);
-  box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.3);
+}
+
+/*-------------*/
+.navigation_arrow {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  padding: 8px;
+  border-radius: 50%;
+  left: 6%;
+  transition: 0.2s;
+}
+
+/*-------------*/
+.heart_like {
+  font-size: 21px;
+  background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -274,10 +289,10 @@ ul {
 /*-----MARGINS-----*/
 /*-----BORDER-RADIUS-----*/
 .restaurants_list {
-  background-color: #F6F6F6;
-  padding: 20px 0px 70px 0px;
   display: flex;
   justify-content: center;
+  background-color: #F6F6F6;
+  padding: 20px 0px 70px 0px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -300,7 +315,7 @@ ul {
 .restaurant_card {
   position: relative;
   width: clamp(280px, 79vw + 1rem, 340px);
-  background-color: white;
+  background-color: #ffffff;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -322,21 +337,6 @@ ul {
 .restaurant_card_bottom {
   display: flex;
   justify-content: space-between;
-}
-
-.restaurant_card_name,
-.restaurant_card_location,
-.restaurant_new_text {
-  margin: 5px;
-}
-
-.restaurant_card_icon {
-  font-size: 21px;
-  background: linear-gradient(to right, #ff0084, #33001b);
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  color: black;
 }
 
 .restaurant_new {
@@ -363,8 +363,7 @@ ul {
 /*-----BORDER-RADIUS-----*/
 footer {
   background-color: #353535;
-  padding-bottom: 25px;
-  padding-left: 25px;
+  padding: 15px 0px 25px 25px;
 }
 @media screen and (min-width: 1000px) {
   footer {
@@ -388,7 +387,7 @@ footer {
 }
 
 .footer_logo {
-  color: white !important;
+  color: #ffffff !important;
   font-size: 18px !important;
 }
 @media screen and (min-width: 1000px) {
@@ -398,19 +397,14 @@ footer {
 }
 
 .footer_icon {
-  color: white;
+  color: #ffffff;
   height: 13px;
   width: 13px;
-  margin-right: 10px;
 }
 
 .footer_li {
   display: flex;
   align-items: center;
-}
-
-.footer_text {
-  margin: 5px 0px;
 }
 
 .logo {
@@ -483,6 +477,34 @@ footer {
   color: #ffffff;
 }
 
+.menu_section_title {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #000000;
+}
+
+.menu_plate_title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #000000;
+}
+
+.menu_plate_details {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #000000;
+}
+
+.menu_plate_price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #000000;
+}
+
 .explore_margin_wrapper {
   margin: 20px 8% 60px 8%;
 }
@@ -511,7 +533,63 @@ footer {
   margin: 5px 0px 0px 0px;
 }
 
-.button {
+.menu_section_title {
+  margin: 30px 0px 15px 0px;
+}
+
+.menu_plate_price {
+  margin: 4px 20px 4px 20px;
+}
+
+.menu_plate_title {
+  margin: 4px 10px 4px 10px;
+}
+
+.menu_plate_details {
+  margin: 4px 10px 4px 10px;
+}
+
+.footer_text {
+  margin: 5px 0px 5px 0px;
+}
+
+.footer_icon {
+  margin: 0px 10px 0px 0px;
+}
+
+.location_icon {
+  margin: 0px 12px 0px 0px;
+}
+
+.menu_list {
+  margin: -45px auto 0px auto;
+}
+
+.logo {
+  margin: 0px;
+}
+
+.menu_header_logo {
+  margin: 0px 30px 0px 0px;
+}
+
+.restaurant_card_name {
+  margin: 5px;
+}
+
+.restaurant_card_location {
+  margin: 5px;
+}
+
+.restaurant_new_text {
+  margin: 5px;
+}
+
+.menu_gradient_button {
+  margin: 30px 0px 20px 0px;
+}
+
+.gradient_button {
   border-radius: 25px;
 }
 
@@ -527,11 +605,19 @@ footer {
   border-radius: 2px;
 }
 
+.menu_plate_card {
+  border-radius: 15px;
+}
+
+.menu_list {
+  border-radius: 30px 30px 0px 0px;
+}
+
 .navigation_bar {
   box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.15);
 }
 
-.button {
+.gradient_button {
   box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.25);
 }
 
@@ -545,6 +631,18 @@ footer {
 
 .restaurant_new {
   box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.15);
+}
+
+.menu_plate_card {
+  box-shadow: 0px 4px 15px hsla(0, 0%, 0%, 0.1);
+}
+
+.navigation_arrow:hover {
+  box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.15);
+}
+
+.gradient_button:hover {
+  box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */

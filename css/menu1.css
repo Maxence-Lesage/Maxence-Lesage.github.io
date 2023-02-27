@@ -78,57 +78,69 @@ ul {
   align-items: center;
 }
 
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+.gradient_button:hover,
+.navigation_arrow:hover,
+.heart_like:hover {
+  cursor: pointer;
+}
+
+/*-------------*/
+.gradient_button {
+  padding: 15px 25px;
+  border-style: hidden;
+  background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
+  transition: 0.2s;
+}
+.gradient_button:hover {
+  background: linear-gradient(to top left, #9b63df -5.2%, #ff88de 110.74%);
+}
+
+/*-------------*/
 .navigation_arrow {
   position: absolute;
   height: 16px;
-  left: 6%;
-  border-radius: 50%;
   width: 16px;
   padding: 8px;
+  border-radius: 50%;
+  left: 6%;
   transition: 0.2s;
-}
-.navigation_arrow:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-.button {
-  transition: 0.2s;
+/*-------------*/
+.heart_like {
+  font-size: 21px;
   background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
-  padding: 15px 25px;
-  border-style: hidden;
-}
-.button:hover {
-  cursor: pointer;
-  background: linear-gradient(to top left, #9b63df -5.2%, #ff88de 110.74%);
-  box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.3);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -154,8 +166,7 @@ ul {
 /*-----BORDER-RADIUS-----*/
 footer {
   background-color: #353535;
-  padding-bottom: 25px;
-  padding-left: 25px;
+  padding: 15px 0px 25px 25px;
 }
 @media screen and (min-width: 1000px) {
   footer {
@@ -179,7 +190,7 @@ footer {
 }
 
 .footer_logo {
-  color: white !important;
+  color: #ffffff !important;
   font-size: 18px !important;
 }
 @media screen and (min-width: 1000px) {
@@ -189,19 +200,14 @@ footer {
 }
 
 .footer_icon {
-  color: white;
+  color: #ffffff;
   height: 13px;
   width: 13px;
-  margin-right: 10px;
 }
 
 .footer_li {
   display: flex;
   align-items: center;
-}
-
-.footer_text {
-  margin: 5px 0px;
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -230,23 +236,31 @@ footer {
 /*-----BACKGROUND-COLORS-----*/
 /*-----MARGINS-----*/
 /*-----BORDER-RADIUS-----*/
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
 .menu_list {
   position: relative;
-  border-radius: 30px 30px 0px 0px;
   padding: 20px 0px;
   max-width: 1000px;
-  margin: auto;
-  margin-top: -45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F6F6F6;
-  z-index: 5;
+  z-index: 1;
 }
 
-.logo {
-  margin: 0;
+.menu_header_logo {
   font-size: 25px !important;
+}
+@media screen and (min-width: 1000px) {
+  .menu_header_logo {
+    font-size: 28px !important;
+  }
 }
 
 .menu_section {
@@ -263,16 +277,27 @@ footer {
 }
 
 .menu_header {
-  width: clamp(300px, 79vw + 1rem, 340px);
+  width: clamp(300px, 79vw + 1rem, 360px);
   display: flex;
   align-items: center;
 }
-.menu_header .restaurant_heart_icon {
-  margin-left: 30px;
-}
 
 .menu_section_title {
+  position: relative;
   width: clamp(300px, 79vw + 1rem, 540px);
+}
+.menu_section_title::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  left: 0;
+  bottom: -6px;
+}
+
+.menu_gradient_button {
+  padding: 15px 50px;
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -284,8 +309,8 @@ footer {
 /*-----BORDER-RADIUS-----*/
 .menu_plate_card {
   display: flex;
-  background-color: white;
   width: clamp(300px, 79vw + 1rem, 540px);
+  background-color: #ffffff;
   overflow: hidden;
 }
 .menu_plate_card:hover {
@@ -314,14 +339,9 @@ footer {
 
 .menu_plate_title,
 .menu_plate_details {
-  margin: 4px 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.menu_plate_price {
-  margin: 4px 20px;
 }
 
 .menu_plate_card_choosed {
@@ -338,7 +358,7 @@ footer {
 .menu_plate_check_icon {
   width: 0px;
   height: 20px;
-  color: white;
+  color: #ffffff;
   transition: 0.4s;
 }
 
@@ -468,7 +488,63 @@ footer {
   margin: 5px 0px 0px 0px;
 }
 
-.button {
+.menu_section_title {
+  margin: 30px 0px 15px 0px;
+}
+
+.menu_plate_price {
+  margin: 4px 20px 4px 20px;
+}
+
+.menu_plate_title {
+  margin: 4px 10px 4px 10px;
+}
+
+.menu_plate_details {
+  margin: 4px 10px 4px 10px;
+}
+
+.footer_text {
+  margin: 5px 0px 5px 0px;
+}
+
+.footer_icon {
+  margin: 0px 10px 0px 0px;
+}
+
+.location_icon {
+  margin: 0px 12px 0px 0px;
+}
+
+.menu_list {
+  margin: -45px auto 0px auto;
+}
+
+.logo {
+  margin: 0px;
+}
+
+.menu_header_logo {
+  margin: 0px 30px 0px 0px;
+}
+
+.restaurant_card_name {
+  margin: 5px;
+}
+
+.restaurant_card_location {
+  margin: 5px;
+}
+
+.restaurant_new_text {
+  margin: 5px;
+}
+
+.menu_gradient_button {
+  margin: 30px 0px 20px 0px;
+}
+
+.gradient_button {
   border-radius: 25px;
 }
 
@@ -488,11 +564,15 @@ footer {
   border-radius: 15px;
 }
 
+.menu_list {
+  border-radius: 30px 30px 0px 0px;
+}
+
 .navigation_bar {
   box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.15);
 }
 
-.button {
+.gradient_button {
   box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.25);
 }
 
@@ -510,6 +590,14 @@ footer {
 
 .menu_plate_card {
   box-shadow: 0px 4px 15px hsla(0, 0%, 0%, 0.1);
+}
+
+.navigation_arrow:hover {
+  box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.15);
+}
+
+.gradient_button:hover {
+  box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.3);
 }
 
 /*# sourceMappingURL=menu1.css.map */

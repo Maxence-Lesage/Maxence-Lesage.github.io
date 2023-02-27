@@ -1,15 +1,47 @@
 @import "../utils/variables";
 @import "../utils/breakpoints";
 
-.button {
-    transition: .2s;
-    background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
-    padding: 15px 25px;
-    border-style: hidden;
-
+.gradient_button,
+.navigation_arrow,
+.heart_like {
     &:hover {
         cursor: pointer;
-        background: linear-gradient(to top left, lighten(#9356DC, 3) -5.2%, lighten(#FF79DA, 3) 110.74%);
-        box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.30);
     }
+}
+
+/*-------------*/
+
+.gradient_button {
+    padding: 15px 25px;
+    border-style: hidden;
+    background: map-get($background-colors , gradient);
+    transition: .2s;
+
+    &:hover {
+        background: map-get($background-colors , lighten-gradient);
+    }
+}
+
+/*-------------*/
+
+.navigation_arrow {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    padding: 8px;
+    border-radius: 50%;
+
+    left: 6%;
+    transition: .2s;
+}
+
+/*-------------*/
+
+.heart_like {
+    font-size: 21px;
+    background: map-get($background-colors , gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    // color: transparent;
 }

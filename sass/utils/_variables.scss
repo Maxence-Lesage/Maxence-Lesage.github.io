@@ -90,7 +90,7 @@ $box-shadow: (
         offset-y: 2px,
         blur-radius: 4px,
         color: hsla(0, 0%, 0%, 0.15)),
-    button: (offset-x: 0px,
+    gradient_button: (offset-x: 0px,
         offset-y: 4px,
         blur-radius: 10px,
         color: hsla(0, 0%, 0%, 0.25)),
@@ -109,12 +109,21 @@ $box-shadow: (
     menu_plate_card: (offset-x: 0px,
         offset-y: 4px,
         blur-radius: 15px,
-        color: hsla(0, 0%, 0%, 0.10))
+        color: hsla(0, 0%, 0%, 0.10)),
+    'navigation_arrow:hover': (offset-x: 0px,
+        offset-y: 4px,
+        blur-radius: 10px,
+        color: hsla(0, 0%, 0%, 0.15)),
+    'gradient_button:hover': (offset-x: 0px,
+        offset-y: 5px,
+        blur-radius: 20px,
+        color: hsla(0, 0%, 0%, 0.30)),
 );
 
 /*-----BACKGROUND-COLORS-----*/
 
 $background-colors: (
+    default-background: #ffffff,
     dark-background: #EAEAEA,
     light-background: #F6F6F6,
     purple-background: #9356DC,
@@ -122,7 +131,9 @@ $background-colors: (
     tutorial-card-hover-background: #F5EDFF,
     restaurant_new: #99E2D0,
     meal-choosed: #99E2D0,
-    footer: #353535
+    footer: #353535,
+    gradient: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%),
+    lighten-gradient: linear-gradient(to top left, lighten(#9356DC, 3) -5.2%, lighten(#FF79DA, 3) 110.74%)
 );
 
 /*-----MARGINS-----*/
@@ -135,14 +146,29 @@ $margins: (
     restaurants_list_wrapper: 0px 20px 0px 20px,
     restaurant_card_bottom: 5px 25px 12px 10px,
     restaurant_card_icon: 5px 0px 0px 0px,
+    menu_section_title: 30px 0px 15px 0px,
+    menu_plate_price: 4px 20px 4px 20px,
+    menu_plate_title: 4px 10px 4px 10px,
+    menu_plate_details: 4px 10px 4px 10px,
+    footer_text: 5px 0px 5px 0px,
+    footer_icon: 0px 10px 0px 0px,
+    location_icon: 0px 12px 0px 0px,
+    menu_list: -45px auto 0px auto,
+    logo: 0px,
+    menu_header_logo: 0px 30px 0px 0px,
+    restaurant_card_name: 5px,
+    restaurant_card_location: 5px,
+    restaurant_new_text: 5px,
+    menu_gradient_button: 30px 0px 20px 0px,
 );
 
 /*-----BORDER-RADIUS-----*/
 
 $border-radius: (
-    button: 25px,
+    gradient_button: 25px,
     tutorial_card: 20px,
     restaurant_card: 15px,
     restaurant_new: 2px,
     menu_plate_card: 15px,
+    menu_list: 30px 30px 0px 0px,
 );

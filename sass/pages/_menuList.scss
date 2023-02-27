@@ -1,22 +1,23 @@
 @import "../utils/variables";
+@import "../utils/breakpoints";
 
 .menu_list {
     position: relative;
-    border-radius: 30px 30px 0px 0px;
     padding: 20px 0px;
     max-width: 1000px;
-    margin: auto;
-    margin-top: -45px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: map-get($background-colors , light-background);
-    z-index: 5;
+    z-index: 1;
 }
 
-.logo {
-    margin: 0;
+.menu_header_logo {
     font-size: 25px !important;
+
+    @include desktop_only {
+        font-size: 28px !important;
+    }
 }
 
 .menu_section {
@@ -33,15 +34,26 @@
 }
 
 .menu_header {
-    width: clamp(300px, 79vw + 1rem, 340px);
+    width: clamp(300px, 79vw + 1rem, 360px);
     display: flex;
     align-items: center;
-
-    & .restaurant_heart_icon {
-        margin-left: 30px;
-    }
 }
 
 .menu_section_title {
+    position: relative;
     width: clamp(300px, 79vw + 1rem, 540px);
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        background-color: map-get($background-colors , meal-choosed);
+        left: 0;
+        bottom: -6px;
+    }
+}
+
+.menu_gradient_button {
+    padding: 15px 50px;
 }

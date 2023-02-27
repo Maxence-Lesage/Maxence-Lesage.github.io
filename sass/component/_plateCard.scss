@@ -2,8 +2,8 @@
 
 .menu_plate_card {
     display: flex;
-    background-color: white;
     width: clamp(300px, 79vw + 1rem, 540px);
+    background-color: map-get($background-colors, default-background);
     overflow: hidden;
 
     &:hover {
@@ -35,14 +35,9 @@
 
 .menu_plate_title,
 .menu_plate_details {
-    margin: 4px 10px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
-
-.menu_plate_price {
-    margin: 4px 20px;
 }
 
 .menu_plate_card_choosed {
@@ -59,6 +54,6 @@
 .menu_plate_check_icon {
     width: 0px;
     height: 20px;
-    color: white;
+    color: map-get($background-colors, default-background);
     transition: .4s;
 }
