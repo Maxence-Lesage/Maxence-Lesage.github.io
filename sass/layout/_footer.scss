@@ -1,0 +1,51 @@
+@import "../utils/variables";
+@import "../utils/breakpoints";
+
+footer {
+    background-color: map-get($background-colors , footer);
+    padding-bottom: 25px;
+    padding-left: 25px;
+
+    @include desktop-only {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.footer_ul {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-only {
+        flex-direction: row;
+        width: min(75%, 800px);
+        justify-content: space-between;
+        margin-right: 90px;
+    }
+}
+
+.footer_logo {
+    color: white !important;
+    font-size: 18px !important;
+
+    @include desktop-only {
+        order: 5;
+    }
+}
+
+.footer_icon {
+    color: white;
+    height: 13px;
+    width: 13px;
+    margin-right: 10px;
+}
+
+.footer_li {
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    margin: 5px 0px;
+}

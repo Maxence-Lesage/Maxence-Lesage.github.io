@@ -9,6 +9,10 @@
 .tutorial_wrapper {
     display: flex;
     flex-direction: column;
+
+    @include desktop-only {
+        width: max(70%, 960px);
+    }
 }
 
 .tutorial_card {

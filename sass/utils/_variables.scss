@@ -48,7 +48,32 @@ $text-palette: (
         font-weight: 500,
         line-height: 16px,
         color: #008766,
-    )
+    ),
+    footer_text:(font-size: 16px,
+        font-weight: 500,
+        line-height: 19px,
+        color: #ffffff,
+    ),
+    menu_section_title:(font-size: 16px,
+        font-weight: 300,
+        line-height: 19px,
+        color: #000000,
+    ),
+    menu_plate_title:(font-size: 18px,
+        font-weight: 500,
+        line-height: 21px,
+        color: #000000,
+    ),
+    menu_plate_details:(font-size: 15px,
+        font-weight: 300,
+        line-height: 17px,
+        color: #000000,
+    ),
+    menu_plate_price:(font-size: 15px,
+        font-weight: 700,
+        line-height: 17px,
+        color: #000000,
+    ),
 );
 
 /*-----BREAKPOINTS-----*/
@@ -80,7 +105,11 @@ $box-shadow: (
     restaurant_new: (offset-x: 0px,
         offset-y: 2px,
         blur-radius: 4px,
-        color: hsla(0, 0%, 0%, 0.15))
+        color: hsla(0, 0%, 0%, 0.15)),
+    menu_plate_card: (offset-x: 0px,
+        offset-y: 4px,
+        blur-radius: 15px,
+        color: hsla(0, 0%, 0%, 0.10))
 );
 
 /*-----BACKGROUND-COLORS-----*/
@@ -115,4 +144,5 @@ $border-radius: (
     tutorial_card: 20px,
     restaurant_card: 15px,
     restaurant_new: 2px,
+    menu_plate_card: 15px,
 );

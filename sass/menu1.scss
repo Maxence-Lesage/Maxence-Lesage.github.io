@@ -2,14 +2,14 @@
 @import "./utils/texts";
 @import "./utils/breakpoints";
 @import "./layout/header";
-@import "./pages/introduction";
 @import "./utils/margin";
 @import "./utils/borderRadius";
 @import "./component/button";
 @import "./utils/shadow";
-@import "./pages/tutorial";
-@import "./pages/restaurantsList";
 @import "./layout/footer";
+@import "./pages/menuImage";
+@import "./pages/menuList";
+@import "./component/plateCard";
 
 @include text-palette($text-palette);
 @include margins($margins);

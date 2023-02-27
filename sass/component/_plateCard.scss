@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+.menu_plate_card {
+    display: flex;
+    background-color: white;
+    width: clamp(300px, 79vw + 1rem, 540px);
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .menu_plate_card_choosed {
+        width: 70px;
+
+        & .menu_plate_check_icon {
+            width: 20px;
+        }
+    }
+}
+
+.menu_plate_card_left {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.menu_plate_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_plate_title,
+.menu_plate_details {
+    margin: 4px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu_plate_price {
+    margin: 4px 20px;
+}
+
+.menu_plate_card_choosed {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($background-colors, meal-choosed);
+    width: 0px;
+    margin-left: auto;
+    transition: .4s;
+}
+
+.menu_plate_check_icon {
+    width: 0px;
+    height: 20px;
+    color: white;
+    transition: .4s;
+}

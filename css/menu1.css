@@ -82,53 +82,13 @@ ul {
   position: absolute;
   height: 16px;
   left: 6%;
+  border-radius: 50%;
+  width: 16px;
+  padding: 8px;
+  transition: 0.2s;
 }
-
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-.introduction {
-  display: flex;
-  flex-direction: column;
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #EAEAEA;
-}
-
-.location_icon {
-  margin-right: 12px;
-}
-
-.explore {
-  background-color: #F6F6F6;
-}
-
-.explore_margin_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-  .explore_margin_wrapper .section_title {
-    font-size: 32px;
-    line-height: 37px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .explore_margin_wrapper .section_title {
-    font-size: 40px;
-    line-height: 46px;
-  }
+.navigation_arrow:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -178,175 +138,6 @@ ul {
 /*-----BACKGROUND-COLORS-----*/
 /*-----MARGINS-----*/
 /*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-.tutorial {
-  display: flex;
-  justify-content: center;
-}
-
-.tutorial_wrapper {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1000px) {
-  .tutorial_wrapper {
-    width: max(70%, 960px);
-  }
-}
-
-.tutorial_card {
-  display: flex;
-  align-items: center;
-  background-color: #F6F6F6;
-  justify-content: space-between;
-  width: clamp(240px, 60vw + 1rem, 260px);
-  height: 68px;
-  padding-right: clamp(30px, 6vw + 1rem, 40px);
-  transition: 0.2s;
-}
-.tutorial_card:hover {
-  cursor: pointer;
-  background-color: #F5EDFF;
-}
-.tutorial_card:hover .tutorial_icon {
-  color: #9356DC;
-}
-
-.tutorial__card_container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-@media screen and (min-width: 1000px) {
-  .tutorial__card_container {
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-
-.tutorial_order_circle {
-  background-color: #9356DC;
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-50%);
-}
-
-.tutorial_icon {
-  height: 20px;
-  color: #7E7E7E;
-  transform: translateX(-5px);
-  transition: 0.2s;
-}
-
-.tutorial_text {
-  width: 180px;
-}
-
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-/*font-family for the logo and the restaurant's name in the menu page*/
-/*-----TEXTS-----*/
-/*-----BREAKPOINTS-----*/
-/*-----BOX-SHADOW-----*/
-/*-----BACKGROUND-COLORS-----*/
-/*-----MARGINS-----*/
-/*-----BORDER-RADIUS-----*/
-.restaurants_list {
-  background-color: #F6F6F6;
-  padding: 20px 0px 70px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1000px) {
-  .restaurants_list_wrapper {
-    width: max(70%, 960px);
-  }
-}
-
-.restaurantsList__card_container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-@media screen and (min-width: 1000px) {
-  .restaurantsList__card_container {
-    flex-direction: row;
-  }
-}
-
-.restaurant_card {
-  position: relative;
-  width: clamp(280px, 79vw + 1rem, 340px);
-  background-color: white;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.restaurant_card:hover {
-  cursor: pointer;
-}
-
-.restaurant_card_image {
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1/0.55;
-}
-@media screen and (min-width: 1000px) {
-  .restaurant_card_image {
-    aspect-ratio: 1/0.5;
-  }
-}
-
-.restaurant_card_bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.restaurant_card_name,
-.restaurant_card_location,
-.restaurant_new_text {
-  margin: 5px;
-}
-
-.restaurant_card_icon {
-  font-size: 21px;
-  background: linear-gradient(to right, #ff0084, #33001b);
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  color: black;
-}
-
-.restaurant_new {
-  position: absolute;
-  background-color: #99E2D0;
-  padding: 0px 3px;
-  top: 15px;
-  right: 15px;
-}
-
 /*font-family for the logo and the restaurant's name in the menu page*/
 /*-----TEXTS-----*/
 /*-----BREAKPOINTS-----*/
@@ -411,6 +202,144 @@ footer {
 
 .footer_text {
   margin: 5px 0px;
+}
+
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+.menu_image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media screen and (min-width: 1000px) {
+  .menu_image {
+    height: 350px;
+  }
+}
+
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+.menu_list {
+  position: relative;
+  border-radius: 30px 30px 0px 0px;
+  padding: 20px 0px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  z-index: 5;
+}
+
+.logo {
+  margin: 0;
+  font-size: 25px !important;
+}
+
+.menu_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_section_card_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu_header {
+  width: clamp(300px, 79vw + 1rem, 340px);
+  display: flex;
+  align-items: center;
+}
+.menu_header .restaurant_heart_icon {
+  margin-left: 30px;
+}
+
+.menu_section_title {
+  width: clamp(300px, 79vw + 1rem, 540px);
+}
+
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+.menu_plate_card {
+  display: flex;
+  background-color: white;
+  width: clamp(300px, 79vw + 1rem, 540px);
+  overflow: hidden;
+}
+.menu_plate_card:hover {
+  cursor: pointer;
+}
+.menu_plate_card:hover .menu_plate_card_choosed {
+  width: 70px;
+}
+.menu_plate_card:hover .menu_plate_card_choosed .menu_plate_check_icon {
+  width: 20px;
+}
+
+.menu_plate_card_left {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 5px 0px;
+  width: 100%;
+}
+
+.menu_plate_information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_plate_title,
+.menu_plate_details {
+  margin: 4px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu_plate_price {
+  margin: 4px 20px;
+}
+
+.menu_plate_card_choosed {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0px;
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.menu_plate_check_icon {
+  width: 0px;
+  height: 20px;
+  color: white;
+  transition: 0.4s;
 }
 
 .logo {
@@ -483,6 +412,34 @@ footer {
   color: #ffffff;
 }
 
+.menu_section_title {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #000000;
+}
+
+.menu_plate_title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #000000;
+}
+
+.menu_plate_details {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #000000;
+}
+
+.menu_plate_price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #000000;
+}
+
 .explore_margin_wrapper {
   margin: 20px 8% 60px 8%;
 }
@@ -527,6 +484,10 @@ footer {
   border-radius: 2px;
 }
 
+.menu_plate_card {
+  border-radius: 15px;
+}
+
 .navigation_bar {
   box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.15);
 }
@@ -547,4 +508,8 @@ footer {
   box-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.15);
 }
 
-/*# sourceMappingURL=main.css.map */
+.menu_plate_card {
+  box-shadow: 0px 4px 15px hsla(0, 0%, 0%, 0.1);
+}
+
+/*# sourceMappingURL=menu1.css.map */

@@ -3,9 +3,15 @@
 
 .restaurants_list {
     background-color: map-get($background-colors, light-background);
-    padding: 30px 0px;
+    padding: 20px 0px 70px 0px;
     display: flex;
     justify-content: center;
+}
+
+.restaurants_list_wrapper {
+    @include desktop-only {
+        width: max(70%, 960px);
+    }
 }
 
 .restaurantsList__card_container {
@@ -20,9 +26,10 @@
 
 .restaurant_card {
     position: relative;
-    width: clamp(280px, 79vw + 1rem, 320px);
+    width: clamp(280px, 79vw + 1rem, 340px);
     background-color: white;
     overflow: hidden;
+    flex-shrink: 0;
 
     &:hover {
         cursor: pointer;
@@ -33,6 +40,10 @@
     object-fit: cover;
     width: 100%;
     aspect-ratio: 1/.55;
+
+    @include desktop-only {
+        aspect-ratio: 1/.50;
+    }
 }
 
 .restaurant_card_bottom {
@@ -45,12 +56,6 @@
 .restaurant_new_text {
     margin: 5px;
 }
-
-.restaurant_card_icon {
-    font-size: 21px;
-}
-
-// background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
 
 .restaurant_new {
     position: absolute;
