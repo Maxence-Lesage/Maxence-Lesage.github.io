@@ -312,41 +312,6 @@ ul {
   }
 }
 
-.restaurant_card {
-  position: relative;
-  width: clamp(280px, 79vw + 1rem, 340px);
-  background-color: #ffffff;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.restaurant_card:hover {
-  cursor: pointer;
-}
-
-.restaurant_card_image {
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1/0.55;
-}
-@media screen and (min-width: 1000px) {
-  .restaurant_card_image {
-    aspect-ratio: 1/0.5;
-  }
-}
-
-.restaurant_card_bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.restaurant_new {
-  position: absolute;
-  background-color: #99E2D0;
-  padding: 0px 3px;
-  top: 15px;
-  right: 15px;
-}
-
 /*font-family for the logo and the restaurant's name in the menu page*/
 /*-----TEXTS-----*/
 /*-----BREAKPOINTS-----*/
@@ -405,6 +370,55 @@ footer {
 .footer_li {
   display: flex;
   align-items: center;
+}
+
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+.restaurant_card {
+  position: relative;
+  width: clamp(280px, 79vw + 1rem, 340px);
+  background-color: #ffffff;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.restaurant_card:hover {
+  cursor: pointer;
+}
+
+.restaurant_card_image {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/0.55;
+}
+@media screen and (min-width: 1000px) {
+  .restaurant_card_image {
+    aspect-ratio: 1/0.5;
+  }
+}
+
+.restaurant_card_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant_new {
+  position: absolute;
+  background-color: #99E2D0;
+  padding: 0px 3px;
+  top: 15px;
+  right: 15px;
 }
 
 .logo {

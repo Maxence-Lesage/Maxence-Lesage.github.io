@@ -3,13 +3,13 @@
 @import "./utils/breakpoints";
 @import "./layout/header";
 @import "./utils/margin";
-@import "./utils/borderRadius";
+@import "./utils/border-radius";
 @import "./component/button";
 @import "./utils/shadow";
 @import "./layout/footer";
-@import "./pages/menuImage";
-@import "./pages/menuList";
-@import "./component/plateCard";
+@import "./pages/menu-image";
+@import "./pages/menu-list";
+@import "./component/plate-card";
 
 @include text-palette($text-palette);
 @include margins($margins);

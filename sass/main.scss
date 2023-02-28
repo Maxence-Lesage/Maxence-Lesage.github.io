@@ -4,12 +4,13 @@
 @import "./layout/header";
 @import "./pages/introduction";
 @import "./utils/margin";
-@import "./utils/borderRadius";
+@import "./utils/border-radius";
 @import "./component/button";
 @import "./utils/shadow";
 @import "./pages/tutorial";
-@import "./pages/restaurantsList";
+@import "./pages/restaurants-list";
 @import "./layout/footer";
+@import "./component/restaurant-card";
 
 @include text-palette($text-palette);
 @include margins($margins);

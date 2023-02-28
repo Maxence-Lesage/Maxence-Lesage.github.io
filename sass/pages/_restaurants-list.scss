@@ -1,0 +1,25 @@
+@import "../utils/variables";
+@import "../utils/breakpoints";
+
+.restaurants_list {
+    display: flex;
+    justify-content: center;
+    background-color: map-get($background-colors, light-background);
+    padding: 20px 0px 70px 0px;
+}
+
+.restaurants_list_wrapper {
+    @include desktop-only {
+        width: max(70%, 960px);
+    }
+}
+
+.restaurantsList__card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @include desktop-only {
+        flex-direction: row;
+    }
+}
