@@ -12,6 +12,13 @@
 
 <body>
 
+    <svg width="0" height="0">
+        <radialGradient id="end" r="150%" cx="30%" cy="107%">
+            <stop stop-color="#FF79DA" offset="0" />
+            <stop stop-color="#9356DC" offset=".8" />
+        </radialGradient>
+    </svg>
+
     <header>
         <nav class="navigation_bar">
             <a class="navigation_arrow_link" href="./index.html">
@@ -30,7 +37,10 @@
 
             <header class="menu_header">
                 <h1 class="logo menu_header_logo">La Palette du goût</h1>
-                <i class="fa-regular fa-heart heart_like"></i>
+                <div class="heart_container">
+                    <i class="fa fa-heart heart_like"></i>
+                    <i class=" fa fa-heart heart_liked"></i>
+                </div>
             </header>
 
             <div class="menu_section">

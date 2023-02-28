@@ -37,11 +37,39 @@
 
 /*-------------*/
 
+.heart_container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+
+    &:hover .heart_liked {
+        height: 21px;
+    }
+}
+
 .heart_like {
-    font-size: 21px;
-    background: map-get($background-colors , gradient);
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    // color: transparent;
+    height: 21px;
+}
+
+.heart_liked {
+    position: absolute;
+    height: 0px;
+    bottom: 0px;
+    transition: .4s;
+}
+
+.heart_liked path {
+    fill: url(#end);
+    transition: .4s;
+    transform-origin: 50% 50%;
+    transform: scale(1.1);
+}
+
+.heart_like path {
+    fill: transparent;
+    stroke-width: 30px;
+    stroke: rgb(0, 0, 0);
 }

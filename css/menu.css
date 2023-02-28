@@ -135,12 +135,40 @@ ul {
 }
 
 /*-------------*/
+.heart_container {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+.heart_container:hover .heart_liked {
+  height: 21px;
+}
+
 .heart_like {
-  font-size: 21px;
-  background: linear-gradient(to top left, #9356DC -5.2%, #FF79DA 110.74%);
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
+  height: 21px;
+}
+
+.heart_liked {
+  position: absolute;
+  height: 0px;
+  bottom: 0px;
+  transition: 0.4s;
+}
+
+.heart_liked path {
+  fill: url(#end);
+  transition: 0.4s;
+  transform-origin: 50% 50%;
+  transform: scale(1.1);
+}
+
+.heart_like path {
+  fill: transparent;
+  stroke-width: 30px;
+  stroke: rgb(0, 0, 0);
 }
 
 /*font-family for the logo and the restaurant's name in the menu page*/
@@ -542,6 +570,10 @@ footer {
 
 .menu_gradient_button {
   margin: 30px 0px 20px 0px;
+}
+
+.restaurant_card_bottom .heart_like {
+  margin: 5px 0px 0px 0px;
 }
 
 .gradient_button {
