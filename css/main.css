@@ -214,6 +214,7 @@ ul {
   stroke: rgb(0, 0, 0);
 }
 
+/**/
 /*font-family for the logo and the restaurant's name in the menu page*/
 /*-----TEXTS-----*/
 /*-----BREAKPOINTS-----*/
@@ -690,5 +691,7 @@ footer {
 .gradient_button:hover {
   box-shadow: 0px 5px 20px hsla(0, 0%, 0%, 0.3);
 }
+
+/**/
 
 /*# sourceMappingURL=main.css.map */
