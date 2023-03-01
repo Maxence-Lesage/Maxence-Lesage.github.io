@@ -146,6 +146,9 @@ ul {
 .heart_container:hover .heart_liked {
   height: 21px;
 }
+.heart_container:hover {
+  cursor: pointer;
+}
 
 .heart_like {
   height: 21px;

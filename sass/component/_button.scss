@@ -48,6 +48,10 @@
     &:hover .heart_liked {
         height: 21px;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .heart_like {
