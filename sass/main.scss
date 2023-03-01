@@ -11,6 +11,8 @@
 @import "./pages/restaurants-list";
 @import "./layout/footer";
 @import "./component/restaurant-card";
+@import "./pages/index-loader";
+@import "./utils/svg-gradient";
 
 @include text-palette($text-palette);
 @include margins($margins);

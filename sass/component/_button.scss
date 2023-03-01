@@ -62,7 +62,7 @@
 }
 
 .heart_liked path {
-    fill: url(#end);
+    fill: url(#heart_gradient);
     transition: .4s;
     transform-origin: 50% 50%;
     transform: scale(1.1);

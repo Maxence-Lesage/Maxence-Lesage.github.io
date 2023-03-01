@@ -159,7 +159,7 @@ ul {
 }
 
 .heart_liked path {
-  fill: url(#end);
+  fill: url(#heart_gradient);
   transition: 0.4s;
   transform-origin: 50% 50%;
   transform: scale(1.1);
@@ -389,6 +389,61 @@ footer {
   height: 20px;
   color: #ffffff;
   transition: 0.4s;
+}
+
+.menu_section {
+  overflow: hidden;
+}
+
+.menu_section_part {
+  display: none;
+}
+
+.menu_section_part:nth-child(0) {
+  display: initial;
+  animation-name: menu-appearance;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+.menu_section_part:nth-child(1) {
+  display: initial;
+  animation-name: menu-appearance;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
+  animation-fill-mode: both;
+}
+
+.menu_section_part:nth-child(2) {
+  display: initial;
+  animation-name: menu-appearance;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.menu_section_part:nth-child(3) {
+  display: initial;
+  animation-name: menu-appearance;
+  animation-duration: 0.5s;
+  animation-delay: 0.75s;
+  animation-fill-mode: both;
+}
+
+@keyframes menu-appearance {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.svg_gradient {
+  position: absolute;
+  transform: translateY(100%);
+  width: 0px;
+  height: 0px;
 }
 
 .logo {

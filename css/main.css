@@ -202,7 +202,7 @@ ul {
 }
 
 .heart_liked path {
-  fill: url(#end);
+  fill: url(#heart_gradient);
   transition: 0.4s;
   transform-origin: 50% 50%;
   transform: scale(1.1);
@@ -448,6 +448,91 @@ footer {
   padding: 0px 3px;
   top: 15px;
   right: 15px;
+}
+
+/*font-family for the logo and the restaurant's name in the menu page*/
+/*-----TEXTS-----*/
+/*-----BREAKPOINTS-----*/
+/*-----BOX-SHADOW-----*/
+/*-----BACKGROUND-COLORS-----*/
+/*-----MARGINS-----*/
+/*-----BORDER-RADIUS-----*/
+header,
+main,
+footer {
+  animation: page_loader 3s;
+}
+
+html,
+body {
+  animation: page_loader_scroll 3s;
+}
+
+body::after {
+  content: "ohmyfood";
+  position: absolute;
+  font-family: "Shrikhand", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  top: -5%;
+  left: -5%;
+  transform: translate(-50%, -50%);
+  animation: 2.9s page_loader_animation;
+}
+
+@keyframes page_loader_animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1) skewX(-10deg);
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.2) skewX(5deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1) skewX(-10deg);
+    opacity: 0.2;
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.2) skewX(5deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.2) skewX(-10deg);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+  }
+}
+@keyframes page_loader {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes page_loader_scroll {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+.svg_gradient {
+  position: absolute;
+  transform: translateY(100%);
+  width: 0px;
+  height: 0px;
 }
 
 .logo {

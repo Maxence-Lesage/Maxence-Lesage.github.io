@@ -1,0 +1,84 @@
+@import "../utils/variables";
+
+header,
+main,
+footer {
+    animation: page_loader 3s;
+}
+
+html,
+body {
+    animation: page_loader_scroll 3s;
+}
+
+body::after {
+    content: "ohmyfood";
+    position: absolute;
+    font-family: $logo_title;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    top: -5%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+
+    animation: 2.9s page_loader_animation;
+}
+
+@keyframes page_loader_animation {
+    0% {
+        transform: translate(-50%, -50%) scale(1) skewX(-10deg);
+        opacity: .2;
+        top: 50%;
+        left: 50%;
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(1.2) skewX(5deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translate(-50%, -50%) scale(1) skewX(-10deg);
+        opacity: .2;
+    }
+
+    90% {
+        transform: translate(-50%, -50%) scale(1.2) skewX(5deg);
+        opacity: .8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(.2) skewX(-10deg);
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@keyframes page_loader {
+    0% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes page_loader_scroll {
+    0% {
+        overflow: hidden;
+    }
+
+    99% {
+        overflow: hidden;
+    }
+
+    100% {
+        overflow: visible;
+    }
+}

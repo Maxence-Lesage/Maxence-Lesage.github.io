@@ -1,0 +1,27 @@
+.menu_section {
+    overflow: hidden;
+}
+
+.menu_section_part {
+    display: none;
+}
+
+@for $i from 0 through 3 {
+    .menu_section_part:nth-child(#{$i}) {
+        display: initial;
+        animation-name: menu-appearance;
+        animation-duration: .5s;
+        animation-delay: $i * .25s;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes menu-appearance {
+    0% {
+        transform: translateX(110%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

@@ -10,6 +10,8 @@
 @import "./pages/menu-image";
 @import "./pages/menu-list";
 @import "./component/plate-card";
+@import "./pages/menu-loader";
+@import "./utils/svg-gradient";
 
 @include text-palette($text-palette);
 @include margins($margins);
